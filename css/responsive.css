@@ -1,0 +1,274 @@
+  body{
+
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+      font-family: "Lato", sans-serif;
+      overflow-x: hidden;
+  }
+
+  .poster{
+    font-size: 16px;
+  }
+
+  .block {
+  position: absolute;
+  width: 80%;
+  margin: 10px;
+  float: left;
+  font-size: 30px;
+  left: 0px;
+  padding: 0px 0px 0px 0px;
+  }
+
+  .block2 {
+  position: absolute;
+  width: 80%;
+  margin: 10px;
+  float:  left;
+  font-size: 30px;
+  left: -2000px;
+  padding: 0px 0px 0px 0px;
+  }
+  .block3 {
+  position: absolute;
+  width: 80%;
+  margin: 10px;
+  float:  left;
+  font-size: 30px;
+  left: -2000px;
+  padding: 0px 0px 0px 0px;
+  }
+
+  .flex-container {
+  display: flex;
+  flex-direction: column;
+
+}
+.sidenav{
+  position: fixed;
+  width:450px;
+  height: 100%;
+  background-color:#e0e0e0 ;
+  padding: 20px 0px 0px 0px;
+  z-index: 1;
+  left: -2000px;
+  top: 0;
+
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+    display: none;
+    
+}
+
+.test {
+    background-color: #0099CC;
+    color: white;
+}
+
+.test2 {
+    background-color: #0099CC;
+    color: white;
+}
+
+.test3 {
+    background-color: #0099CC;
+    color: white;
+}
+
+
+
+
+.topbar{
+  position: fixed;
+  width: 100%; 
+  background-color:#eceff1;
+  height: 50px;
+  z-index: 1;
+  top: 0px;
+
+}
+
+.meniu{
+  position: relative;
+  float: right;
+}
+
+.content{
+position: relative;
+left: 0px;
+top: 50px;
+}
+#move{
+  position: relative;
+  float: right;
+  padding: 5px 16px 14px 0px;
+
+}
+
+
+
+.recentPost {
+  -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+  width: 80%;
+  position: relative;
+  top: -10px;
+}
+
+.page {
+  width: 80%;
+  height: 100px;
+   -webkit-box-shadow: 0 4px 6px -6px #222;
+  -moz-box-shadow: 0 4px 6px -6px #222;
+  box-shadow: 0 4px 6px -6px #222;
+}
+
+.tag{
+    background-color: #007E33;
+    color: white;
+    padding: 6px 10px;
+    font-size: 12px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+
+  }
+
+
+
+
+.none{
+  color: white;
+}
+
+   textarea {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    resize: none;
+    box-sizing: border-box;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    height: 200px;
+
+}
+
+ .title {
+    width: 100%;
+    padding: 12px;
+    border-radius: 30px;
+    resize: none;
+    box-sizing: border-box;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    height: 50px;
+}
+
+.selector{
+    position: relative;
+    width: 10%;
+    padding: 0px;
+    border-radius: 30px;
+    resize: none;
+    box-sizing: border-box;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    height: 30px;
+    top: -10px;
+
+}
+
+
+.postBtn {
+    background-color: #0099CC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    
+}
+.deleteBtn {
+    background-color: #CC0000;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    outline-style:none;
+    box-shadow:none;
+    border-color:transparent;
+    
+    
+}
+
+.postBtn:hover {
+    background-color: #33b5e5;
+}
+
+
+.col-75 {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .col-75, .postBtn, label {
+    margin: 6px 150px;
+    width: 40%;
+    }
+    .topbar{
+      z-index: 2;
+    }
+    li a{
+      position: relative;
+      top: 50px;
+    }
+    .tag{
+      position: relative;
+    left: -150px;
+    }
+
+    .postPage{
+      position: relative;
+      left: 150px;
+    }
+    .sidenav{
+      width:100%;
+    }
+
+
+}
